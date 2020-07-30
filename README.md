@@ -23,4 +23,4 @@ It definitely is not part of the WordPress.org or WordPress.com platforms.
 
 ## How can I get in touch?
 
-Ping @glueckpress on the WordPress Slack, or on Twitter.
+Ping @glueckpress on the WordPress Slack.
