@@ -1,6 +1,6 @@
 # Changelog
 
-## 4.0
+## 4.0.0
 
 * WordPress is about to hit “40%”. I suck at maintaining changelogs.
 * Added a link to Simon Dickson’s [excellent article on the x% myth](https://simondickson.co.uk/2020/11/25/can-we-really-claim-that-40-of-all-websites-run-on-wordpress/).
