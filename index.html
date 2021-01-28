@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>WordPress is not WordPress.com</title>
-	<meta name="description" content="WordPress vs WordPress.com: Are they the same?">
+	<meta name="description" content="Omitting “.com” when you mean to refer to WordPress.com is as inaccurate as omitting “wash” when you mean to refer to “car wash”. The two are not the same.">
 	<meta name="robots" content="index, follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>*{box-sizing:border-box;margin:0;padding:0}body{background:#f1f1f1;font:100%/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;-webkit-font-smoothing:subpixel-antialiased;min-height:100vh}strong{font-weight:bold}hr{border:1px solid currentColor;border-width:1px 0 0 0;display:block;height:0;margin-bottom:.75rem;overflow:hidden;width:3rem}h1,h2,h3,p{font-weight:normal;margin-bottom:1.5rem}.description{font-size:.875rem;font-style:italic}.page{background:#32373C;min-height:100vh}.site-header{background:#fff8e5;height:3rem;left:0;overflow:hidden;position:fixed;width:100vw}.site-header a{display:inline-block;font-weight:bold;height:100%;margin:0;padding:.66rem .33rem;text-align:center;text-decoration:none;text-transform:uppercase;width:50%}#wordpress:target:before,#wordpress-dot-com:target:before{content:'';display:block;margin-top:3rem}.site-main{padding-top:3rem}.entry-content h1,.entry-content h2,.entry-content h3{font-size:1.125rem;text-transform:uppercase}.entry-content:last-child,.site-info p{margin-bottom:0}.wordpress,.wordpress-dot-com,.both,.site-info{padding:1.5rem}.nav-wordpress{background:#23282d;color:#f0f0f0}.nav-wordpress-com{background:#0075a5}.nav-wordpress-com,.wordpress-dot-com a,.wordpress-dot-com a:visited{color:#fff}.wordpress{background:#fff}.wordpress a,.wordpress a:visited{color:#0073aa}.wordpress a:active,.wordpress a:hover{color:#00a0d2}.wordpress-dot-com{background:#0087be;color:#fff}.both,.site-footer{background:#32373C;color:#fff}.both a,.both a:visited,.site-footer a,.site-footer a:visited{color:#f7f7f7}.site-info{font-size:.75rem}@media screen and (min-width:768px){#wordpress:target:before,#wordpress-dot-com:target:before{display:none}.nav-wordpress,.nav-wordpress-com{pointer-events:none;cursor:default}#wordpress-dot-com:target:before{display:none;margin-top:0}.site-main{display:grid;grid-template-columns:1fr 1fr}.both{grid-column-start:1;grid-column-end:3}.both .entry-content{display:grid;grid-template-columns:1fr 1fr;padding-top:1.5rem}.both .entry-content h1,.both .entry-content p{margin:0}.both .entry-content h1{line-height:1.375}}@media screen and (min-width:960px){.page{margin:0 auto;max-width:960px}.site-header{left:50%;margin-left:-480px;width:960px}}</style>
@@ -21,6 +21,7 @@
 		});
 	}
 	</script>
+	<meta property="og:image" content="assets/img/icon-1456x772.png">
 	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="assets/img/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-icon-72x72.png">
@@ -74,7 +75,7 @@
 					<div class="entry-content">
 						<h2>WordPress.com is powered by WordPress</h2>
 						<p>WordPress.com, you guessed it, lives on <a href="https://wordpress.com/" target="_blank" rel="noopener noreferrer">WordPress.com</a>.</p>
-						<p class="description">WordPress.com is <strong>powered by WordPress, the Free software, and owned by Automattic Inc.</strong>, a company based in San Francisco. Hundreds of employees and contractors work for Automattic, some of which also contribute to WordPress, the Free Software.</p>
+						<p class="description">WordPress.com is <strong>powered by WordPress, the Free Software, and owned by Automattic Inc.</strong>, a company based in San Francisco. Hundreds of employees and contractors work for Automattic, some of which also contribute to WordPress, the Free Software.</p>
 
 						<h3>WordPress.com is Software as a Service</h3>
 						<p>You can’t download WordPress.com, just like you can’t download Facebook.</p>
@@ -90,8 +91,8 @@
 
 				<article class="hentry both">
 					<div class="entry-content">
-						<h1>WordPress powers <a href="https://w3techs.com/technologies/details/cm-wordpress/all/all" rel="noopener noreferrer" target="_blank">31% of the web</a>.</h1>
-						<p>That’s not WordPress.com alone.<br>It’s all&#160;of&#160;WordPress. Yours too.</p>
+						<h1>WordPress powers <a href="https://w3techs.com/technologies/details/cm-wordpress/all/all">40% of the web</a>.</h1>
+						<p>That’s not WordPress.com alone.<br>It’s all&#160;of&#160;WordPress. Yours too.<br>(Though it’s also <a href="https://simondickson.co.uk/2020/11/25/can-we-really-claim-that-40-of-all-websites-run-on-wordpress/">not quite true</a>.)</p>
 					</div>
 				</article>
 
@@ -100,12 +101,15 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
 					<hr>
-					<p>This Progressive Web App is brought to you by a trademark issue and a sense of accuracy. <a href="https://github.com/glueckpress/wpistnotwp.com/" rel="nofollow noopener noreferrer" target="_blank">Whois?</a></p>
+					<p>This website is brought to you by a trademark issue and a sense of accuracy. <a href="https://github.com/casparhubinger/wpisnotwp.com/" rel="nofollow">Whois?</a></p>
 				</div>
 			</footer>
 
 		</div>
 	</div>
-	<script>history.pushState('', document.title, window.location.pathname + window.location.search);</script>
+	<script>
+		// Remove hash on page load, but keep query params.
+		history.pushState('', document.title, window.location.pathname + window.location.search);
+	</script>
 </body>
 </html>
