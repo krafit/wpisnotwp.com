@@ -9,31 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      # Compile CSS
-      - name: Compile style CSS
-        uses: gha-utilities/sass-build@v0.5.1
-        with:
-          source: assets/scss/style.scss
-          destination: style.css
-          outputStyle: expanded
-      - name: Compile style CSS compressed
-        uses: gha-utilities/sass-build@v0.5.1
-        with:
-          source: assets/scss/style.scss
-          destination: style.min.css
-          outputStyle: compressed
-      - name: Compile editor CSS
-        uses: gha-utilities/sass-build@v0.5.1
-        with:
-          source: assets/scss/webfonts.scss
-          destination: editor.css
-          outputStyle: expanded
-      - name: Compile editor CSS compressed
-        uses: gha-utilities/sass-build@v0.5.1
-        with:
-          source: assets/scss/webfonts.scss
-          destination: editor.min.css
-          outputStyle: compressed
       # Install SSH key
       - name: Install SSH key
         uses: shimataro/ssh-key-action@v2.5.1
